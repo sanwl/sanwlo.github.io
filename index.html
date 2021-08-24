@@ -1,23 +1,231 @@
 <!DOCTYPE html>
+<!-- 首次！号选第一个自动生成骨架，注意是英文！号 
+     ctrl+/为注释快捷键 -->
+     <!-- div独占一行 span一行可以放多个 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/main.css">
-    <script type="text/javascript"></script>
+    <title>动漫爱好者聚集地</title>
+    <style>
+      /* 文本对齐关键字 text-align ，left right center */
+      /* 装饰文本例如下划线之类 text-decoration 一般只有none才常用，取消链接下划线用的 */
+      /* 段落缩进 text-indent ，有数字px和em，em表示当前一个文字大小的长度 */
+      /* line-height 行间距，每一行字之间距离 px */
+      /* 标签选择器  */
+       h2{
+         /* 颜色  color 后面颜色表示有三种 英语单词预定的；#16进制；rgb代码*/
+         color: rgb(51, 45, 46);
+         text-align: center ;
+         /* 字体 */
+         font-family: 'Microsoft Yahei';
+         /* font-size 字体大小，标题比较特殊，在body要单独指定，数字后要加px，表像素块 */
+         /* font-weight 字粗细 一般用单纯数字表示，在100~700 */
+         /* font-style 字体风格，如斜体*/
+         /* font可以复合xie 例如 font：数值 ，但必须得用规定的顺序 */
+       }
+       /* 类选择器，选择调用该类的标签 可以多选类，中间用空格隔开*/
+       .yellow{
+         color: yellow;
+       }
+       .right{
+         text-align: right;
+       }
+       /* id选择器，只能被用一次 */
+       #green{
+         color: green;
+       }
+       .change{
+         display: block;
+         width: 230px;
+         height: 40px;
+         background-color: #55585a;
+         font-size: 14px;
+         color: white;
+         text-indent: 2em;
+         /* 使height与text-height相等，实现文字居中 */
+         line-height: 40px;
+       }
+       /* 全选器 前面带个*即可 */
+
+       a{
+        text-decoration: none;
+       }
+       a:hover{
+         background-color: violet;
+       }
+       p {
+         text-indent: 2em;
+         font-family: 'Microsoft Yahei';
+         line-height: 25px;
+       }
+  
+       .pic{
+         text-align: center;
+       }
+       .nav{
+         height: 41px;
+         border-top: 3px solid #ff8500;
+         border-bottom: 1px solid #edeef0;
+         background-color: #fcfcfc;
+         line-height: 41px;
+       }
+       
+       table,
+       td{
+            border:1px solid pink;
+            /* 合并相邻边框 */
+            border-collapse: collapse;
+       }
+
+    </style>
 </head>
 <body>
-    <div class="banner">
-        <video autoplay muted loop>
-            <source src="ATRI-my dear moments PV1.mp4" type="video/mp4">
-        </video>
-        <div class="content">
-            <!-- ../返回上一级，可以多个 -->
-             <h1><a href="../favorite.html">你好世界</a></h1>
-             <p>团子大家族</p>
-        </div>
+    <!--<h数字> 为标题标签 独占一行 <strong>为文字加粗标签，但标题标签本身有加粗效果  -->
+      <h1 class="pic"><strong>幻想乡</strong></h1>
+      <!-- 锚点 href指向某标签id即跳向该标签 -->
+         <div  class="pic nav"><!--可以应用多个类-->
+           <a href="#0">零之使魔</a>   <a href="#1">罪恶王冠</a>  <a href="#2">刀剑神域</a>
+         </div>
+         <!-- 可以嵌套，图片和文字也可为链接，其他不清楚 <a>文字 图片</a> -->
+         <div class="right"><a href="https://www.bilibili.com/"><img src="https://i1.hdslb.com/bfs/face/70fba98159d382c91d236289a3294fb2b0c3f258.jpg@45w_45h_1c_100q.webp" width="50" /></a><a href="https://www.bilibili.com/">哔哩哔哩动画</a>
+         <img src="https://tx-free-imgs.acfun.cn/content/2020_4_5/1.5860178587515075E9.png?imageView2/1/w/100/h/100|imageMogr2/auto-orient/format/webp/quality/75!/ignore-error/1" width="50"> <a href="https://www.acfun.cn/" target="_blank">ACfun</a></div>  
+
+      <a href="学成在线/index.html">点这里</a>
+      <hr><!--一条划线-->  
+      <h1 class="pic">最喜欢的动画选集</h1>
+
+      <h2>二次元</h2>
+    <!--段落标签<p> 文本随浏览器窗口变化而变化  -->
+    <!--换行单标签<br />  -->
+      <p>是一个ACGN亚文化圈专门用语，来自于日语中的“二次元”，意思是“二维”。
+        日本早期的动画、漫画、游戏等作品都是以二维图像构成，其画面以我们视角来看是一个平面，所以通过这些载体创造的虚拟世界被动漫爱好者称为“二次元世界”，简称“二次元”。
+        同时，“二次元”具有“架空”、“假想”、“幻想”、“虚构”之意。在日本的动画爱好者中指动画、游戏等作品中的角色，相对地，“三次元”被用来指代现实中的人物。
+        该词广泛在ACGN文化圈中被用作对“架空世界”或者说梦想世界的一种称呼，但ACGN并非等同于二次元。</p>
+        <p>
+        该用法始于日本，早期的日本动画、游戏作品都是以二维图像构成的，其画面是一个平面，所以被称为是“二次元世界”，简称“二次元”，而与之相对的是“三次元”，即“我们所存在的这个次元”，也就是现实世界。
+        二次元是指人类幻想出来的唯美世界，用各种憧憬的体现虐袭观赏者的视觉体验，本质其实还是三次元世界的人类心中模糊的对梦想生活的憧憬和对美好未来的期望。“二次元”是一种类型的文化，而非一种风格。</p>
+    <!--<img>图像标签 必须的属性为src文件指定路径  网络地址与本地地址-->
+    <!--长宽可只设置一个，等比例缩小放大 border为边框大小设定 title是鼠标在图像上显示的文字 alt是图片加载不出来显示的文字   -->
+    <div class="pic">
+      <img src="134037435_1.jpg" width="500" border="5" title="新海诚天空"/>
+      <img src="1.jpg" alt="加载失败"/>
     </div>
+    <br />
+
+                                                                                                                                           <!-- <a>超链接标签中 target属性默认为_self，即点击链接在本页面显示，设置成_blank为另一个页面显示 -->
+
+
+    <h2 id="0">零之使魔</h3>
+    <p class="pic">
+       <img src="https://bkimg.cdn.bcebos.com/pic/11385343fbf2b211931303e752cc72380cd79123204f?x-bce-process=image/resize,m_lfit,w_268,limit_1/format,f_jpg">
+    </p>
+    <p>
+      普通的人类——才人被露易丝以“使魔”的身份召唤到了名为“克里斯汀”的异世界，对异世界一无所知而且不知道该如何返回原来世界的他开始了的“奴隶”生活。在经历了各种磨难后，才人与露易丝的感情逐步加深，在强烈的羁绊关系下，他们开始了与这个世界的邪恶与魔物的斗争。
+    </p>
+    
+
+    <h2 id="1">罪恶王冠</h3>
+    <p class="pic">
+    <img src="https://bkimg.cdn.bcebos.com/pic/c83d70cf3bc79f3d39032877bda1cd11738b2993?x-bce-process=image/resize,m_lfit,w_268,limit_1/format,f_jpg"><br />
+    </p>
+    <p>2029年，日本因突然爆发的”Apocalypse Virus（天启病毒）“的蔓延而陷入了混乱之中。处于无政府状态的日本，受到了由超国家之间所组织成的名为“GHQ”的组织的武力介入并接受其统治，东京的六本木更成为被封锁的地区。之后又以名为“lost christmas（失落的圣诞）”的事件为契机，日本失去了独立国家的实质权力，并被赋予了表面上的自治权，由此人们开始享受短暂的和平。
+时光流逝，10年后的2039年。少年樱满集怀抱着抑郁的心境，并对世间冷眼相待。樱满集是在天王州第一高校就读的高中二年生，与同学们保持着一定距离的同时，度过着闲散而又平静的日子。
+然而集安稳的日常在某一天突然宣告结束。那天放学后，在自己中意的老地方和一名少女不期而遇。少女名为楪祈。她正是集所憧憬，并在网上有着巨大影响力的歌手。而她也有不为人知的一面。祈正是由17岁青少年恙神涯所率领的“葬仪社”——一个在被封锁的城市中歌颂着从”GHQ“手中得到”日本的解放“而赌上性命不断孤独地战斗着的抵抗组织——的成员之一。
+集在祈与涯引导之下，与葬仪社而发生了关联。尔后因为关系紧迫获被女主使用了虚空基因组，他的右手上出现了“王之刻印”。通过刻印，集可以自在地从人的身体里抽取出名为“void（虚空）”的物质，并以借此为武器得到战斗的力量。然而这也仅仅是，他所背负的“罪之王冠”的物语的开幕罢了…… </p>
+
+    <h2 id="2">刀剑神域</h3>
+    <p class="pic">
+    <img src="https://bkimg.cdn.bcebos.com/pic/023b5bb5c9ea15ce36d3e8ceb44b2df33a87e85014eb?x-bce-process=image/resize,m_lfit,w_268,limit_1/format,f_jpg"><br />
+    </p>
+    <h3>“这虽然是游戏，但可不是闹着玩的。”</h3>
+    <h4>——“SAO 刀剑神域”设计者·茅场晶彦——</h4> 
+      <p>2022年，人类的科技力终于得以将完全的网络虚拟空间实际制造出来。大厂牌电子机械制造商“ARGUS”开发出了名为“NERvGear”的新世代民用终端，使得完全网络虚拟空间潜行能够被利用到了一般的网游之中，而《SAO》——刀剑神域便是首个利用该先进技术的大型VRMMO。</p>
+      <p>桐谷和人，一名年轻的网游玩家，便是使用NERvGear玩《SAO》的先行者玩家之一。他很幸运——抑或说不幸地获得了参与封闭测试的资格，并在游戏正式上线营运之日就迫不及待地戴上头盔造型的“NERvGear”，以“完全潜行”的状态和其他9500名玩家一起，开始享受起了正式版的SAO世界。但很快，新鲜感带来的愉悦就变成了未知的不安。SAO正式上线4小时后，正和好友组队的和人发现封测时确实存在的“退出"指令竟然从指令控制面板上消失了。虽然和人以为这只是暂时的系统BUG而未加在意，但很快，他就和其他全部玩家一道被传送到了游戏的开始之地——起始广场。 而在广场上等待着他们的，是自称SAO游戏设计者的科学天才——“茅场晶彦”的死亡游戏说明：不能退出是游戏的正常现象，只有打倒位于“艾恩葛朗特”顶楼100层的魔王——即达成“完全攻略”——才是离开这个世界唯一的方法。并且，在游戏内Game Over或是尝试脱下NERvGear，现实中的玩家也会立刻被NERvGear发出的高出力微波破坏脑部而死亡.</p>
+      <p>突如其来的恐惧，导致最初的一个月内死亡人数就突破了2000，然而渐渐地，玩家们开始习惯了这个“真实的虚拟世界”，两年之后，尚有6000名玩家存活，最前线已推进到第74层……而桐谷和人，则化身成名为“桐人”的黑衣剑士，开始谱写他作为一名独行玩家的冒险篇章。</p>
+    <!-- table表格标签,其中，td必须在tr中，tr必须在table中，tr为行，th为td文字加粗居中，常用于表头 -->
+    <!-- table有属性长宽，align=“center”表格居中，border边界宽度，cellpadding cellspacing -->
+    <table align="center" border="1">
+          <tr>
+            <th>作品名称</th><th>总共季数</th><th>类型标签</th>
+          </tr>
+          <tr>
+            <td>零之使魔</td><td>四</td><td>奇幻魔法</td>
+          </tr>
+          <tr>
+            <td>刀剑神域</td><td>四</td><td>科幻冒险</td>
+          </tr>
+          <tr>
+            <td>罪恶王冠</td><td>一</td><td>战争奇幻</td>
+          </tr>
+    </table>
+
+    <a href="#" class="change">第一梯队</a>
+    <a href="#" class="change">第二梯队</a>
+    <a href="#" class="change">第三梯队</a>
+
+    <!-- 无序列表ul,ul中只能出现li标签，但li中可以放任何元素 -->
+    <ul>
+        <li class="yellow">出包王女</li>
+        <li class="yellow">天降之物</li>
+        <li class="yellow">亲吻姐姐</li>
+        <li class="yellow">恶魔高校</li>
+    </ul>
+    <!-- 有序列表ol，有顺序 -->
+    <h3 id="green">福利程度</h3>
+    <ol>
+        <li>亲吻姐姐</li>
+        <li>恶魔高校</li>
+        <li>出包王女</li>
+        <li>天降之物</li>
+    </ol>
+    <!-- 自定义标签dl ,dt为首，dd为后续 -->
+    <dl>
+        <dt>关于动漫</dt>
+        <dd>AGEfuns</dd>
+        <dd>B站</dd>
+        <dd>A站</dd>
+    </dl>
+
+    <!-- 表单标签 form为表单域，在其中的数据会传递给后台 以后再深入 -->
+    <form>
+      <!-- input为按钮元素，属性有name，value刚开始加载初始值，checked初始是否被选，maxlength最大输入长度 -->
+      用户名：
+      <input type="text"></br>
+      密码： 
+      <input type="password"></br>
+      性别：
+      <!-- 单选按钮radio 必须有相同name才可以单选,而复选checkbox就不需要  -->
+      <input type="radio" name="sex" id="boy"><label for="boy">男</label>
+      <input type="radio" name="sex" id="girl"><label for="girl">女</label></br>
+      <!-- label为绑定标签，点击标签内的文字跳到for所对应的id标签中 -->
+
+      爱好类型：
+      <input type="checkbox" name="hobby">恋爱<input type="checkbox" name="hobby">运动<input type="checkbox" name="hobby">奇幻</br>
+      <!-- 提交标签类型,点击后将数据提交至后台 -->
+
+      <!-- 下拉标签 select 属性selected 初始化被选中,可以直接就写selected -->
+      选择你的等级
+      <select>
+              <option>萌新</option>  
+              <option>p小将</option> 
+              <option selected="selected">p元帅</option>
+              <option>老二次元</option> 
+      </select>
+    </br>
+
+    留言
+    <!-- 文本域标签textarea cols rows属性为长宽 -->
+    <textarea></textarea></br>
+
+      <input type="submit" value="点击提交"></br>
+      <!-- 刷新 -->
+      <input type="reset" value="重新设置"></br>
+      <!-- button 配合js使用 -->
+      <input type="button" value="发送验证码"></br>
+      <!-- 上传文件 -->
+      <input type="file" value="点击提交"></br>
+    </form>
 </body>
 </html>
